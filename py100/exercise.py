@@ -1,29 +1,20 @@
 # some code will go here
 import random
 
+class Conditionals:
 # Yes? No? Part 2
 # Use a ternary expressions
+  @staticmethod 
+  def yes_no_part_2():
+    random_number = random.randint(0, 1)
+    # depends on truthiness of random_number being 1 for truthy 0 for falsy
+    message = "Yes!" if random_number else "No."
+    print(message)
+  @staticmethod
+  def yes_no_part_1():
+    random_number = random.randint(0 , 1)
+    message = "Yes!" if random_number else "No."
+    print(message)
 
-random_number = random.randint(0, 1)
-message = "Yes!" if random_number == 1 else "No."
-print(message)
-
-
-# Looping exercises
-
-# Loop on Command
-# while True:
-#   print("Should I stop looping?")
-#   answer = input().lower().strip()
-#   if answer == "yes":
-#     break
-#   else:
-#     print("Answer yes to stop looping")
-
-# Conditionals 
-
-# Yes? No? Part 1
-
-# random_number = random.randint(0 , 1)
-# message = "Yes!" if random_number else "No."
-# print(message)
+if __name__ == "__main__":
+  Conditionals.yes_no_part_2()
