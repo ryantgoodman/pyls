@@ -14,7 +14,7 @@ import random
 # Yes? No? Part 1
 
 random_number = random.randint(0 , 1)
-if random_number == 1:
+if random_number:
   print("Yes!")
 else:
-  print("No")
+  print("No.")
