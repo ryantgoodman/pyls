@@ -15,6 +15,18 @@ class Conditionals:
     random_number = random.randint(0 , 1)
     message = "Yes!" if random_number else "No."
     print(message)
+  @staticmethod
+  def check_the_weather_part_1(weather=""):
+    if weather == "sunny":
+      message = "It's a beautiful day!"
+    elif weather == "rainy":
+      message = "Grab your umbrella."
+    else:
+      message = "Let's stay inside."
+    return message
+
 
 if __name__ == "__main__":
-  Conditionals.yes_no_part_2()
+  print(Conditionals.check_the_weather_part_1())
+  print(Conditionals.check_the_weather_part_1("sunny"))
+  print(Conditionals.check_the_weather_part_1("rainy"))
